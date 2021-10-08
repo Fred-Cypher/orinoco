@@ -1,0 +1,274 @@
+*{
+    margin : 0;
+    padding :0;
+}
+
+body{
+    background-color: #e48b0707;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+main{
+    flex:1;
+}
+
+/* ----- Header ----- */
+
+header, footer{
+    display: flex;
+    align-items: center;
+    background-color: #F3E9F1;
+}
+
+.logo, .basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoImg{
+    height: 4rem;
+    width: auto;
+}
+
+.orinoco{
+    height: 4rem;
+}
+
+.enterpriseDescription{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.pageLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border : 1px solid #eec3e5;
+    padding: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #ebbce1;
+    margin-bottom: 0.3rem;
+}
+
+.pageLink:hover{
+    box-shadow: 0.2rem 0.2rem 0.6rem #ee86d7;
+}
+
+.icon{
+    height: 2rem;
+}
+
+.basketImage{
+    height : 4rem;
+    width : 4rem;
+}
+
+a{
+    text-decoration: none;
+    color : black;
+}
+
+a:hover{
+    color: initial;
+}
+
+/* ----- Main ----- */
+
+.container{
+    text-align : center;
+}
+
+/* ----- Cards ----- */
+
+.card{
+    height: auto;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.cardIndex:hover{
+    box-shadow: 0.1em 0.5em 1em #8f5bfe6e;
+}
+
+.cardImage{
+    height: 16rem;
+    width: auto;
+    object-fit: cover;
+}
+
+.cardImageSolo{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.price{
+    text-align: right;
+}
+
+/* ----- Footer ----- */
+
+footer{
+    padding-top: 1rem;
+}
+
+.credit{
+    font-size: 0.7rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0.5rem;
+    padding-right: 3rem;
+    font-size: 1.6rem;
+}
+
+.social i{
+    color:#7031fa;
+}
+
+/* ----- Product ----- */
+
+#product{
+    display: flex;
+    justify-content: center;
+}
+
+#product .cardImage{
+    height: 23rem;
+    width: auto;
+    object-fit: cover;
+}
+
+.addProduct{
+    width: 100%;
+    border : 1px solid rgb(207, 207, 207);
+}
+.addProduct:hover{
+    background-color: #f3e9f171;
+    border : 1px solid #ecb7e1;
+}
+
+/* ----- Construction ----- */
+
+.construction{
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-shadow: 0.2rem 0.2rem 0.8rem #7131fa73;
+}
+
+/* ----- Panier ----- */
+
+.trash{
+    height: 1.6rem;
+    width: 1.5rem;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    border : 1px solid #eec3e5;
+}
+
+.firstLine{
+    background-color: #7131fa25;
+}
+
+.fullBasket{
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.clear, .sendCommand{
+    border : 1px solid #eec3e5;
+    background-color: #F3E9F1;
+
+}
+
+.clear:hover, .sendCommand:hover{
+    box-shadow: 0.2rem 0.2rem 0.5rem #ebbce1;
+}
+
+.emptyBasket{
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem #7131fa88;
+}
+
+.coord{
+    box-shadow: 0.2rem 0.2rem 0.8rem #ebbce165;
+}
+
+/* ----- Confirmation commande ----- */
+
+.command{
+    background-color: #7131fa25;
+}
+
+.validationButton{
+    background-color: #7131fa25;
+    border : 1px solid #7131fa4f;
+}
+
+.validationButton:hover{
+    box-shadow: 0.3em 0.5em 0.4em #8f5bfe6e;
+}
+
+.endText{
+    border : 1px solid #7131fa4f;
+    box-shadow: 0.1em 0.1em 0.8em #8f5bfe48;
+    background-color: #7131fa13;
+}
+
+.endText span{
+    font-weight: 640;
+}
+
+
+/* ----- Nombre de produits dans le panier ----- */
+
+.circleNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top : 4.2rem;
+    right: 1.5rem;
+    border : 1px solid #7131fa4f;
+    width : 1.5rem;
+    height: 1.5rem;
+    background-color: #b18efc;
+    border-radius: 50%;
+    color : white;
+    font-weight: 550;
+}
+
+.leftHear{
+    position: relative;
+    top : 5.55em;
+    right: 1.65em;
+    border : 1px solid #7131fa4f;
+    width : 0.7rem;
+    height: 0.7rem;
+    background-color: #b18efc;
+    border-radius: 50%;
+    color : white;
+}
+.rightHear{
+    position: relative;
+    top : 4.85em;
+    right: 0.5em;
+    border : 1px solid #7131fa4f;
+    width : 0.7rem;
+    height: 0.7rem;
+    background-color: #b18efc;
+    border-radius: 50%;
+    color : white;
+}
